@@ -26,5 +26,5 @@ export const postCreateValidation = [
     .isLength({ min: 10 })
     .isString(),
   body("tags", "Wrong tags format").optional().isString(),
-  body("imgUrl", " Bad link format to image").optional().isURL(),
+  body("imageUrl", " Bad link format to image").optional().isURL(),
 ];
